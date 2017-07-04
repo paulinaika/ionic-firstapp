@@ -6,20 +6,28 @@ import { StatusBar } from '@ionic-native/status-bar';
 
 import { MyApp } from './app.component';
 import { HomePage } from '../pages/home/home';
+import { UsersPage } from "../pages/users/users";
+import { UserPage } from "../pages/users/user/user";
+
 
 @NgModule({
   declarations: [
     MyApp,
-    HomePage
+    HomePage,
+    UsersPage,
+    UserPage,
   ],
   imports: [
     BrowserModule,
     IonicModule.forRoot(MyApp)
   ],
   bootstrap: [IonicApp],
+  // entry components allows to forest angular to prepare the rest of the app
   entryComponents: [
     MyApp,
-    HomePage
+    HomePage,
+    UsersPage,
+    UserPage,
   ],
   providers: [
     StatusBar,
